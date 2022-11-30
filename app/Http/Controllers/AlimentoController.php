@@ -21,7 +21,7 @@ class AlimentoController extends Controller
     public function index()
     {
         $alimentos = Alimento::paginate();
-        
+
         $categorias2 = Categoria::all();
 
         foreach ( $alimentos as $alimento){
